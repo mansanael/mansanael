@@ -320,7 +320,7 @@
 						<input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
 						<textarea name="message" rows="5" class="form-control" id="message"
 							placeholder="Your Message"></textarea>
-						<input name="send" type="submit" class="form-control" id="send" value="SEND ME">
+						<input name="send" type="submit" onsubmit=" sendtomansa() " class="form-control" id="send" value="SEND ME">
 					</form>
 				</div>
 				<div class="col-md-1 col-sm-1"></div>
@@ -365,6 +365,22 @@
 	<script src="js/jquery.simple-text-rotator.js"></script>
 	<!-- custom -->
 	<script src="js/custom.js"></script>
+
+	<script>
+		function sendtomansa() {
+			var name = document.getElementById('name').value;
+			var email = document.getElementById('email').value;
+			var message = document.getElementById('message').value;
+
+			if (name == "" || email == "" || message == "") {
+				alert("Please fill all fields");
+			} else {
+				
+				alert("Thank you for your message. I will get back to you as soon as possible.");
+			}
+		}
+		
+	</script>
 
 </body>
 
