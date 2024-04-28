@@ -51,6 +51,12 @@ h1,h2,h3,h4,h5
         color: #ffffff;
         font-weight: bold;
     }
+
+    h6
+    {
+        color: #000000;
+        font-weight: bold;
+    }
 /* end all heading */
 
 /* start all section */
