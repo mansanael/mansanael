@@ -89,7 +89,7 @@
 					<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
 						<div class="media">
 							<div class="media-object media-left">
-								<i class="fa fa-laptop"></i>
+								<i class="fa fa-code"></i>
 							</div>
 							<div class="media-body">
 								<h3 class="media-heading"> Web and Mobile Development</h3>
@@ -105,7 +105,7 @@
 					<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
 						<div class="media">
 							<div class="media-object media-left">
-								<i class="fa fa-link"></i>
+								<i class="fa fa-cube"></i>
 							</div>
 							<div class="media-body">
 								<h3 class="media-heading"> IT and Business Consuling </h3>
@@ -315,12 +315,12 @@
 					</address>
 				</div>
 				<div class="col-lg-6 col-md-6 col-xs-10 wow fadeInUp" data-wow-delay="0.6s">
-					<form role="form" >
+					<form >
 						<input name="name" type="text" class="form-control" id="name" placeholder="Your Name">
 						<input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
 						<textarea name="message" rows="5" class="form-control" id="message"
 							placeholder="Your Message"></textarea>
-						<input name="send" type="submit" onsubmit= sendtomansa()  class="form-control" id="send" value="SEND ME">
+						<input name="send" type="submit" onClick= sendtomansa  class="form-control" id="send" value="SEND ME">
 					</form>
 				</div>
 				<div class="col-md-1 col-sm-1"></div>
@@ -367,7 +367,8 @@
 	<script src="js/custom.js"></script>
 
 	<script>
-		function sendtomansa() {
+		function sendtomansa(e) {
+			e.preventDefault();
 			var name = document.getElementById('name').value;
 			var email = document.getElementById('email').value;
 			var message = document.getElementById('message').value;
